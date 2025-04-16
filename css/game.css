@@ -87,6 +87,20 @@ header div a:hover{
     border-style: solid;
 }
 
+.main .cenario{
+    width: 100%;
+    height: 100%;
+
+}
+
+.main .block-error{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    background-color: red;
+    z-index: 99;
+}
+
 .overlay{
     position: fixed;
     top: 0;
