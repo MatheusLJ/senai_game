@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+:root{
+    --primary-color: #004aad;
+    --white:#fff;
+    --black:#000;
+}
+
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    background-color: whitesmoke;
+    height: 5.25rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 4.375rem;
+    z-index: 99;
+    color: var(--primary-color);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;  
+}
+
+header div a{
+    text-decoration: none;
+    color: inherit;  
+    font-size: 1.4rem;
+    transition: 0.3s ease-in-out;
+}
+
+header div a:hover{
+    font-size: 1.5rem;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.main{
+    width: 70%;
+    height: 70%;
+    background-color: #004aad;
+    z-index: 1;
+    border-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor preta semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+}
+  
+.overlay.ativo{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup{
+    position: absolute;
+    z-index: 99;
+    width: 50vw;
+    height: 95vh;
+    background-color: whitesmoke;
+    border-radius: 0px;
+    border-color: var(--primary-color);
+    border-width: 4px;
+    border-style: solid;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.popup.ativo{
+    position: absolute;
+    z-index: 99;
+    width: 50vw;
+    height: 95vh;
+    background-color: whitesmoke;
+    border-radius: 0px;
+    border-color: var(--primary-color);
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@keyframes fadeIn{
+    from{opacity: 0; transform: scale(0.9);}
+    to{opacity: 1; transform: scale(1);}
+}
+
+.popup .pergunta{
+    text-align: justify;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.popup div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    background-color: whitesmoke;
+}
+
+.popup div button{
+    width: 100%;
+    height: 20%;
+    background-color: #004aad;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: var(--primary-color);
+    border-width: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.popup div button:hover{
+    transform: scale(1.1);
+}
+
+.popup .tempo{
+    font-size: 3rem; 
+    color: #004aad;
+}
+
+.tip{
+    width: 80px;
+    height: 80px;
+    z-index: 99;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    background-color: #004aad;
+    border-radius: 5px;
+    border-color: var(--white);
+    border-width: 3px;
+    border-style: groove;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.tip:hover{
+    position: absolute;
+    right: 1%;
+    bottom: 2%;
+}
+
+.change{
+    width: 80px;
+    height: 80px;
+    z-index: 99;
+    position: absolute;
+    right: 8%;
+    bottom: 1%;
+    background-color: #004aad;
+    border-radius: 5px;
+    border-color: var(--white);
+    border-width: 3px;
+    border-style: groove;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.change:hover{
+    position: absolute;
+    right: 8%;
+    bottom: 2%;
+}
+
+.score{
+    width: 220px;
+    height: 80px;
+    background-color: #004aad;
+    z-index: 99;
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    border-radius: 5px;
+    border-color: var(--white);
+    border-width: 3px;
+    border-style: groove;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.score p{
+    font-size: 2.1rem;
+    color: var(--white);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <title>Jogo - Segurança do Trabalho</title>
+</head>
+<header>
+    <h2 id="boasVindas"></h2>
+    <div>
+        <a href="ranking.html">Ranking</a>
+        <a href="creditos.html">Créditos</a>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <img src="img/Design sem nome.png" class="bg-img">
+        <div class="main">
+            <button onclick="abrirPopup()">teste</button>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <p class="pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum, praesentium, alias excepturi amet molestiae debitis ipsam beatae dolores hic, suscipit at incidunt quasi enim error tempore laudantium nostrum non.</p>
+                <div>
+                    <button onclick="fecharPopup()">opcao1</button>
+                    <button onclick="fecharPopup()">opcao2</button>
+                    <button onclick="fecharPopup()">opcao3</button>
+                    <button onclick="fecharPopup()">opcao4</button>
+                </div>
+                <p class="tempo" id="tempo">60</p>
+            </div>  
+        </div>
+    </div>
+    <div class="score">
+        <img src="img/score.png">
+        <p>2000</p>
+    </div>
+    <button class="tip"><img src="img/tip.png"></button>
+    <button class="change"><img src="img/refresh.png"></button>
+</body>
+<script src="js/script.js"></script>
+</html>
