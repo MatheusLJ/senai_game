@@ -32,24 +32,24 @@ const perguntas = [
     {
       pergunta: "Qual norma regulamentadora trata sobre segurança no trabalho em máquinas e equipamentos?",
       opcoes: ["NR 18", "NR 6", "NR 12", "NR 15"],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Na construção civil, qual é o limite máximo recomendado para trabalho em altura sem linha de vida, segundo a NR 35?",
       opcoes: ["1 metro", "1,5 metros", "2 metros", "3 metros"],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Em áreas classificadas como atmosferas explosivas, qual EPI é inadequado?",
       opcoes: ["Calçado antiestático", "Roupa de algodão", "Celular comum no bolso", "Luva de borracha"],
-      respostaCorreta: 2
+      resposta: 2
     },
   
     // Fácil
     {
       pergunta: "Qual o EPI indicado para proteger as mãos contra cortes e produtos químicos?",
       opcoes: ["Máscara", "Bota de borracha", "Luva de proteção", "Protetor auricular"],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Qual ação simples pode evitar tropeços no ambiente de trabalho?",
@@ -59,12 +59,12 @@ const perguntas = [
         "Manter o ambiente limpo e organizado",
         "Evitar varrer o chão"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Qual EPI é usado para proteger a audição em ambientes ruidosos?",
       opcoes: ["Capacete", "Óculos de proteção", "Luva de borracha", "Protetor auricular"],
-      respostaCorreta: 3
+      resposta: 3
     },
     {
       pergunta: "O que deve ser feito antes de utilizar uma escada portátil?",
@@ -74,7 +74,7 @@ const perguntas = [
         "Pintar a escada",
         "Emprestar para outro colega"
       ],
-      respostaCorreta: 1
+      resposta: 1
     },
     {
       pergunta: "Qual a principal função da sinalização de segurança?",
@@ -84,7 +84,7 @@ const perguntas = [
         "Orientar e alertar sobre riscos",
         "Iluminar o ambiente"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "O uso do cinto de segurança é obrigatório em trabalhos:",
@@ -94,7 +94,7 @@ const perguntas = [
         "Em altura superior a 2 metros",
         "Apenas na direção de veículos"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Quando o uso de EPI é dispensado?",
@@ -104,7 +104,7 @@ const perguntas = [
         "Quando estiver no horário de almoço",
         "Quando o EPI estiver sujo"
       ],
-      respostaCorreta: 1
+      resposta: 1
     },
   
     // Médio
@@ -116,7 +116,7 @@ const perguntas = [
         "Um espaço com entrada e saída limitada, ventilação insuficiente e potencial para riscos",
         "Um escritório com ar-condicionado"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Qual é o maior risco ao operar empilhadeiras sem treinamento?",
@@ -126,7 +126,7 @@ const perguntas = [
         "Atropelar pessoas ou provocar tombamento da carga",
         "Danificar a buzina"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Em ambientes com risco de incêndio, é proibido:",
@@ -136,7 +136,7 @@ const perguntas = [
         "Fumar ou provocar faíscas",
         "Beber água"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "O que deve ser feito ao identificar um equipamento com defeito?",
@@ -146,7 +146,7 @@ const perguntas = [
         "Emprestar para outro colega",
         "Guardar no armário"
       ],
-      respostaCorreta: 1
+      resposta: 1
     },
     {
       pergunta: "Por que é importante realizar a Análise Preliminar de Risco (APR)?",
@@ -156,7 +156,7 @@ const perguntas = [
         "Para identificar e prevenir acidentes antes do início das atividades",
         "Para escolher o melhor uniforme"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "O que pode ocorrer ao misturar produtos químicos sem orientação?",
@@ -166,7 +166,7 @@ const perguntas = [
         "Economia de material",
         "Redução de odores"
       ],
-      respostaCorreta: 1
+      resposta: 1
     },
     {
       pergunta: "O que fazer em caso de vazamento de gás em ambiente fechado?",
@@ -176,7 +176,7 @@ const perguntas = [
         "Abrir portas e janelas, evacuar e acionar emergência",
         "Ligar o celular"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
   
     // Difícil
@@ -188,7 +188,7 @@ const perguntas = [
         "Máquinas e equipamentos",
         "Segurança em altura"
       ],
-      respostaCorreta: 1
+      resposta: 1
     },
     {
       pergunta: "Qual é o documento exigido por lei que comprova a entrega dos EPIs ao trabalhador?",
@@ -198,7 +198,7 @@ const perguntas = [
         "Ficha de EPI assinada",
         "Manual do equipamento"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "O uso correto de EPI é responsabilidade de quem?",
@@ -208,7 +208,7 @@ const perguntas = [
         "De todos os trabalhadores",
         "Do governo"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Qual o principal motivo para se evitar o improviso com ferramentas e andaimes?",
@@ -218,12 +218,12 @@ const perguntas = [
         "Aumento do risco de acidentes graves e fatais",
         "Baixo desempenho da equipe"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Qual órgão é responsável por fiscalizar o cumprimento das Normas Regulamentadoras no Brasil?",
       opcoes: ["SUS", "INSS", "Ministério do Trabalho", "IBGE"],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "O uso incorreto de EPIs pode resultar em:",
@@ -233,7 +233,7 @@ const perguntas = [
         "Riscos de acidentes, contaminações ou lesões",
         "Aumento da produção"
       ],
-      respostaCorreta: 2
+      resposta: 2
     },
     {
       pergunta: "Em atividades com solda, qual risco é frequente se os EPIs adequados não forem utilizados?",
@@ -243,7 +243,7 @@ const perguntas = [
         "Queimaduras, intoxicação por fumos metálicos e lesões oculares",
         "Cãibras"
       ],
-      respostaCorreta: 2
+      resposta: 2
     }
 ];
   
