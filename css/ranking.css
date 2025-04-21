@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+:root{
+    --primary-color: #004aad;
+    --white:#fff;
+    --black:#000;
+}
+
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.container-play{
+    position: relative;
+    z-index: 1;
+    width: 30vw;
+    height: 75vh;
+    background-color: whitesmoke;
+    border-radius: 0px;
+    border-color: var(--primary-color);
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seg{
+    width: 100%;
+    height: 7%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seg h2{
+    color: var(--white); 
+}
+
+.container-play-2{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-play-2 h2{
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+.container-play-2 p{
+    text-align: justify;
+    color: var(--black);
+    font-size: 1rem;
+
+}
+
+.container-play-2 input{
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    border-style:dotted;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px; 
+    color: var(--primary-color);
+}
+
+.container-play-2 button{
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: var(--primary-color);
+    border-width: 3px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.container-play-2 button:hover{
+    transform: scale(1.1);
+}

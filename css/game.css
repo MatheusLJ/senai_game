@@ -97,7 +97,7 @@ header div a:hover{
 .main .block-error{
     position: absolute;
     cursor: pointer;
-    background-color: red;
+    background-color: transparent;
 }
 
 @keyframes piscarDica{
@@ -270,7 +270,27 @@ header div a:hover{
 
 .tip:hover{
     position: absolute;
-    right: 1%;
+    bottom: 2%;
+}
+
+.exit{
+    width: 80px;
+    height: 80px;
+    z-index: 99;
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    background-color: #004aad;
+    border-radius: 5px;
+    border-color: var(--white);
+    border-width: 3px;
+    border-style: groove;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.exit:hover{
+    position: absolute;
     bottom: 2%;
 }
 
@@ -292,7 +312,6 @@ header div a:hover{
 
 .change:hover{
     position: absolute;
-    right: 8%;
     bottom: 2%;
 }
 

@@ -18,11 +18,11 @@
         <img src="img/Design sem nome.png" class="bg-img">
         <div class="main">
             <img src="img/cenario5.png" class="cenario">
-            <div class="block-error" style="top: 60%; left: 16%; width: 8%; height: 10%;" onclick="abrirPopup(0, this)"></div>
-            <div class="block-error" style="top: 75%; left: 15%; width: 28%; height: 20%;" onclick="abrirPopup(1, this)"></div>
-            <div class="block-error" style="top: 1%; left: 38%; width: 5%; height: 13%;" onclick="abrirPopup(2, this)"></div>
-            <div class="block-error" style="top: 42%; left: 71%; width: 6%; height: 5%;" onclick="abrirPopup(3, this)"></div>
-            <div class="block-error" style="top: 69%; left: 86%; width: 10%; height: 24%;" onclick="abrirPopup(4, this)"></div>
+            <div class="block-error" style="top: 18%; left: 12%; width: 12%; height: 21%;" onclick="abrirPopup(20, this)"></div>
+            <div class="block-error" style="top: 60%; left: 25%; width: 13%; height: 20%;" onclick="abrirPopup(21, this)"></div>
+            <div class="block-error" style="top: 41%; left: 3%; width: 19%; height: 26%;" onclick="abrirPopup(22, this)"></div>
+            <div class="block-error" style="top: 40%; left: 76%; width: 8%; height: 28%;" onclick="abrirPopup(23, this)"></div>
+            <div class="block-error" style="top: 50%; left: 86%; width: 10%; height: 24%;" onclick="abrirPopup(24, this)"></div>
         </div>
         <div class="overlay" id="overlay">
             <div class="popup">
@@ -38,11 +38,11 @@
             <div class="mudarCenario">
                 <p>Escolha o cenário:</p>
                 <div>
-                    <button onclick="window.location.href='game1.html'">opcao1</button>
-                    <button onclick="window.location.href='game2.html'">opcao2</button>
-                    <button onclick="window.location.href='game3.html'">opcao3</button>
-                    <button onclick="window.location.href='game4.html'">opcao4</button>
-                    <button onclick="window.location.href='game6.html'">opcao4</button>
+                    <button onclick="window.location.href='game.html'">Oficina Mecânica</button>
+                    <button onclick="window.location.href='game2.html'">Canteiro de Obras</button>
+                    <button onclick="window.location.href='game3.html'">Campo de Colheita</button>
+                    <button onclick="window.location.href='game4.html'">Escritório</button>
+                    <button onclick="window.location.href='game6.html'">Clinica Hospitalar</button>
                 </div>
                 <button class="close" onclick="fecharPopup_2()">Fechar</button>
             </div>
@@ -54,6 +54,7 @@
     </div>
     <button class="tip" id="tip"><img src="img/tip.png"></button>
     <button class="change" onclick="abrirPopup_2()"><img src="img/refresh.png"></button>
+    <button class="exit" onclick="logout()"><img src="img/exit.png"></button>
 </body>
 <script src="js/perguntas.js"></script>
 <script src="js/script.js"></script>

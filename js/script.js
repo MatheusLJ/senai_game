@@ -3,6 +3,7 @@ let botoes = null;
 let tempo = 60;
 let intervalo;
 let pontuacao = 0;
+
 function irParaJogo(){
     const nome = document.getElementById('nome').value.trim();
     if (nome !== ""){
@@ -13,12 +14,31 @@ function irParaJogo(){
     }
 }
 
+function logout(){
+  const nome = localStorage.getItem("nomeJogador");
+  const pontos = parseInt(localStorage.getItem("jogadorPontos")) || 0;
+
+  if(nome){
+  let ranking = JSON.parse(localStorage.getItem("ranking")) || [];
+  ranking.push({ nome, pontos });
+  ranking.sort((a, b) => b.pontos - a.pontos);
+  localStorage.setItem("ranking", JSON.stringify(ranking));
+  console.log("Ranking atualizado:");
+  console.table(ranking);
+  }else{
+    console.warn("Nome do jogador não encontrado.");
+  }
+  localStorage.removeItem("nomeJogador");
+  localStorage.removeItem("pontuacao");
+  // window.location.href = "index.html";
+}
+
 const nome = localStorage.getItem('nomeJogador');
-    const boasVindas = document.getElementById('boasVindas');
-    if (nome){ 
-    boasVindas.textContent = `Bem-vindo, ${nome}!`;
-    }else{
-    boasVindas.textContent = "Bem-vindo!";
+const boasVindas = document.getElementById('boasVindas');
+if (nome){ 
+  boasVindas.textContent = `Bem-vindo, ${nome}!`;
+  }else{
+  boasVindas.textContent = "Bem-vindo!";
 }
 
 function abrirPopup(indice, elemento){
@@ -45,7 +65,8 @@ function abrirPopup(indice, elemento){
 function verificarResposta(indiceSelecionado) {
   if (indiceSelecionado === perguntaAtual.resposta) {
     botoes[indiceSelecionado].classList.add('botao-correto');
-    pontuacao += tempo*2;
+    pontuacao += tempo*2
+    localStorage.setItem("jogadorPontos", pontuacao);
     addScore(pontuacao)
   } else {
     botoes[indiceSelecionado].classList.add('botao-incorreto');
@@ -58,7 +79,7 @@ function verificarResposta(indiceSelecionado) {
       botao.classList.remove('botao-correto', 'botao-incorreto');
       botao.disabled = false;
     });
-  }, 3000);
+  }, 1000);
 }
   
 function fecharPopup(){
