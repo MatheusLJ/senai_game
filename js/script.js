@@ -30,7 +30,7 @@ function logout(){
   }
   localStorage.removeItem("nomeJogador");
   localStorage.removeItem("pontuacao");
-  // window.location.href = "index.html";
+  window.location.href = "index.html";
 }
 
 const nome = localStorage.getItem('nomeJogador');
