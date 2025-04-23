@@ -79,7 +79,7 @@ function verificarResposta(indiceSelecionado) {
       botao.classList.remove('botao-correto', 'botao-incorreto');
       botao.disabled = false;
     });
-  }, 1000);
+  }, 2500);
 }
   
 function fecharPopup(){
