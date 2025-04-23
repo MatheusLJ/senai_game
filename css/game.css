@@ -97,7 +97,7 @@ header div a:hover{
 .main .block-error{
     position: absolute;
     cursor: pointer;
-    background-color: transparent;
+    background-color: red;
 }
 
 @keyframes piscarDica{

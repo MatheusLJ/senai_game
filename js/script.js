@@ -109,12 +109,14 @@ function addScore(){
 }
 
 document.getElementById("tip").addEventListener("click", () => {
+  pontuacao -= 20;
+  addScore(pontuacao);
   const blocosErro = document.querySelectorAll(".block-error");
   blocosErro.forEach(bloco => {
     bloco.classList.add("dica-ativa");
     setTimeout(() => {
       bloco.classList.remove("dica-ativa");
-    }, 4000);
+    }, 2500);
   });
 });
 
